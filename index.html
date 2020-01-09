@@ -20,11 +20,13 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="header-bar">
+    <header class="site-header" style="position: fixed; z-index: 100;">
+        <div class="header-bar" style="background:linear-gradient(grey,black);padding: 10px;">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-10 col-lg-4">
@@ -62,29 +64,28 @@
             <div class="row">
                 <div class="col-12 offset-lg-2 col-lg-10">
                     <div class="entry-header zoom">
-                        <h2>Exodia 2020</h2>
+                        <h2 style="position: relative; z-index: 0;">Exodia 2020</h2>
 
                     </div><!-- .entry-header -->
 
                     <div class="countdown flex flex-wrap justify-content-between" data-date="2020/06/28">
                         <div class="countdown-holder">
-                            <div class="dday"></div>
-                            <label>Days</label>
+                            <div id="dday"></div>
                         </div><!-- .countdown-holder -->
 
                         <div class="countdown-holder">
-                            <div class="dhour"></div>
-                            <label>Hours</label>
+                            <div id="dhour"></div>
+                            <!-- <label>Hours</label> -->
                         </div><!-- .countdown-holder -->
 
                         <div class="countdown-holder">
-                            <div class="dmin"></div>
-                            <label>Minutes</label>
+                            <div id="dmin"></div>
+                            <!-- <label>Minutes</label> -->
                         </div><!-- .countdown-holder -->
 
                         <div class="countdown-holder">
-                            <div class="dsec"></div>
-                            <label>Seconds</label>
+                            <div id="dsec"></div>
+                            <!-- <label>Seconds</label> -->
                         </div><!-- .countdown-holder -->
                     </div><!-- .countdown -->
                 </div><!-- .col-12 -->
@@ -100,8 +101,16 @@
             </div>
         </div><!-- .container -->
     </div><!-- .hero-content -->
-
     <div class="content-section">
+        <img src="images/beach_sand.png" class='bgbg' style="top: 2000px;left: 0;transform: rotateY(180deg);" width="1905px">
+        <img src="images/sky.png" class='bgbg' style="z-index: -1;">
+        <img src="images/tree.png" class='bgbg' style="right: 0;top: 2000px; ">
+        <img src="images/vine.png" class="bgbg" style="transform: rotateY(180deg);right: 0;top: 2600px;">
+        <img src="images/vine.png" class="bgbg" style="transform: rotateY(180deg);right: 0;top: 3200px;">
+        <img src="images/vine.png" class="bgbg" style="transform: rotateY(180deg);right: 0;top: 3800px;">
+        <img src="images/tree3.png" class='bgbg' style="top: 1000px;z-index: -1;">
+        <img src="images/tree4.png" class='bgbg' style="right: 0;">
+        <img src="images/pineapple.gif" class="bgbg" style="top: 3000px;">
         <div class="container">
             <div class="row" style="margin-bottom:100px;">
                 <div class="col-12">
@@ -138,34 +147,49 @@
                         <div class="entry-title">
                             <h2 style="font-size: 80px;">Sponsors</h2>
                         </div><!-- entry-title -->
+                        <!-- <div class="slideshow-container" style="width: 25%;">
+
+                            <div class="mySlides fade">
+                                <img src="images/sponsors/AIMCO SOLUTIONS.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="images/sponsors/ashoka furniture.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="images/sponsors/Asset 3@600x.png" style="width:100%">
+                            </div>
+
+                        </div> -->
                         <div class="sponsors_ki_list">
-                            <img src="images/sponsors/aasiyana decor.jpg" alt="">
-                            <img src="images/sponsors/AIMCO SOLUTIONS.png" alt="">
-                            <img src="images/sponsors/ashoka furniture.jpg" alt="">
-                            <img src="images/sponsors/Asset 3@600x.png" alt="">
-                            <img src="images/sponsors/beardo-3.jpg" alt="">
-                            <img src="images/sponsors/BIO-RAD.png" alt="">
-                            <img src="images/sponsors/catalyst.png" alt="">
-                            <img src="images/sponsors/ClearTrail.jpg" alt="">
-                            <img src="images/sponsors/cortex solutions.jpg" alt="">
-                            <img src="images/sponsors/Daily Dose Cafe.png" alt="">
-                            <img src="images/sponsors/ENTUPLE.png" alt="">
-                            <img src="images/sponsors/feeniks.png" alt="">
-                            <img src="images/sponsors/HBR Ascend.png" alt="">
-                            <img src="images/sponsors/internshalalogo.png" alt="">
-                            <img src="images/sponsors/made easy.jpg" alt="">
-                            <img src="images/sponsors/NBCC.jpeg" alt="">
-                            <img src="images/sponsors/obtuze solution.jpg" alt="">
-                            <img src="images/sponsors/orane international.png" alt="">
-                            <img src="images/sponsors/paras udyog.jpg" alt="">
-                            <img src="images/sponsors/PNB.png" alt="">
-                            <img src="images/sponsors/R Sons.png" alt="">
-                            <img src="images/sponsors/research aid.jpg" alt="">
-                            <img src="images/sponsors/SBI.png" alt="">
-                            <img src="images/sponsors/sjvn.png" alt="">
-                            <img src="images/sponsors/stage.jpg" alt="">
-                            <img src="images/sponsors/swag satrangi.jpeg" alt="">
-                            <img src="images/sponsors/The Plenum School.png" alt="">
+                            <img class="mySlides" src="images/sponsors/aasiyana decor.jpg" alt="">
+                            <img class="mySlides" src="images/sponsors/AIMCO SOLUTIONS.png" alt="">
+                            <img class="mySlides" src="images/sponsors/ashoka furniture.jpg" alt="">
+                            <img class="mySlides" src="images/sponsors/Asset 3@600x.png" alt="">
+                            <img class="mySlides" src="images/sponsors/beardo-3.jpg" alt="">
+                            <img class="mySlides" src="images/sponsors/BIO-RAD.png" alt="">
+                            <img class="mySlides" src="images/sponsors/catalyst.png" alt="">
+                            <img class="mySlides1" src="images/sponsors/ClearTrail.jpg" alt="">
+                            <img class="mySlides1" src="images/sponsors/cortex solutions.jpg" alt="">
+                            <img class="mySlides1" src="images/sponsors/Daily Dose Cafe.png" alt="">
+                            <img class="mySlides1" src="images/sponsors/ENTUPLE.png" alt="">
+                            <img class="mySlides1" src="images/sponsors/feeniks.png" alt="">
+                            <img class="mySlides1" src="images/sponsors/HBR Ascend.png" alt="">
+                            <img class="mySlides1" src="images/sponsors/internshalalogo.png" alt="">
+                            <img class="mySlides2" src="images/sponsors/made easy.jpg" alt="">
+                            <img class="mySlides2" src="images/sponsors/NBCC.jpeg" alt="">
+                            <img class="mySlides2" src="images/sponsors/obtuze solution.jpg" alt="">
+                            <img class="mySlides2" src="images/sponsors/orane international.png" alt="">
+                            <img class="mySlides2" src="images/sponsors/paras udyog.jpg" alt="">
+                            <img class="mySlides2" src="images/sponsors/PNB.png" alt="">
+                            <img class="mySlides2" src="images/sponsors/R Sons.png" alt="">
+                            <img class="mySlides3" src="images/sponsors/research aid.jpg" alt="">
+                            <img class="mySlides3" src="images/sponsors/SBI.png" alt="">
+                            <img class="mySlides3" src="images/sponsors/sjvn.png" alt="">
+                            <img class="mySlides3" src="images/sponsors/stage.jpg" alt="">
+                            <img class="mySlides3" src="images/sponsors/swag satrangi.jpeg" alt="">
+                            <img class="mySlides3" src="images/sponsors/The Plenum School.png" alt="">
                         </div>
 
                     </div><!-- the-complete-lineup -->
@@ -335,9 +359,10 @@
                                 </div><!-- entry-content -->
                             </div><!-- phone-number -->
                         </div><!-- contact-phone -->
-            </div><!-- col-4 -->
-                <a href="contact.html" style="text-align: center;margin: 50px auto"><button class="btn-sm btn btn-primary">Contact us</button></a>
-            </div>
+                    </div><!-- col-4 -->
+                    <a href="contact.html" style="text-align: center;margin: 50px auto"><button
+                            class="btn-sm btn btn-primary">Contact us</button></a>
+                </div>
             </div><!-- container -->
         </div><!-- home-page-last-news -->
     </div>
@@ -362,9 +387,11 @@
                         <div class="footer-social">
                             <ul class="flex justify-content-center align-items-center">
                                 <!-- <li><a href="#"><i class="fab fa-pinterest"></i></a></li> -->
-                                <li><a href="https://www.facebook.com/Exodia.IITMandi/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.facebook.com/Exodia.IITMandi/"><i
+                                            class="fab fa-facebook-f"></i></a></li>
                                 <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
-                                <li><a href="https://www.instagram.com/exodia.in/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.instagram.com/exodia.in/"><i class="fab fa-instagram"></i></a>
+                                </li>
                                 <!-- <li><a href="#"><i class="fab fa-behance"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> -->
                             </ul>
@@ -385,7 +412,88 @@
     <script type='text/javascript' src='js/circle-progress.min.js'></script>
     <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
     <script type='text/javascript' src='js/custom.js'></script>
+    <script>
+        var slideIndex = 0;
+        var slideIndex1 = 0;
+        var slideIndex2 = 0;
+        var slideIndex3 = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var slides1 = document.getElementsByClassName("mySlides1");
+            var slides2 = document.getElementsByClassName("mySlides2");
+            var slides3 = document.getElementsByClassName("mySlides3");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < slides1.length; i++) {
+                slides1[i].style.display = "none";
+            }
+            for (i = 0; i < slides2.length; i++) {
+                slides2[i].style.display = "none";
+            }
+            for (i = 0; i < slides3.length; i++) {
+                slides3[i].style.display = "none";
+            }
+            slideIndex++;
+            slideIndex1++;
+            slideIndex2++;
+            slideIndex3++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            if (slideIndex1 > slides1.length) {
+                slideIndex1 = 1
+            }
+            if (slideIndex2 > slides2.length) {
+                slideIndex2 = 1
+            }
+            if (slideIndex3 > slides3.length) {
+                slideIndex3 = 1
+            }
+            slides[slideIndex - 1].style.display = "inline-block";
+            slides1[slideIndex1 - 1].style.display = "inline-block";
+            slides2[slideIndex2 - 1].style.display = "inline-block";
+            slides3[slideIndex3 - 1].style.display = "inline-block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 
 </body>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("April 5, 2020 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("dday").innerHTML = days + "<br>days ";
+        document.getElementById("dhour").innerHTML = hours + "<br>hrs "
+        document.getElementById("dmin").innerHTML = minutes + "<br>min ";
+        document.getElementById("dsec").innerHTML = seconds + "<br>sec ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
 
 </html>
