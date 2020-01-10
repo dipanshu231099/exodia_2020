@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Exodia 2020 iit mandi orgainsed fest">
+    <meta name="keywords"
+        content="exodia , 2020 , fun, events, iit, mandi, himachal, fest, cultural, technical, design">
+    <meta name="author" content="exodia">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title> EXODIA 2020</title>
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+            /* Remove this if you don't want the 3D effect */
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 300px;
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        /* Style the back side */
+        .flip-card-back {
+            background: linear-gradient(to top,rgb(32, 32, 32),white);
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+    </div>
+
+    <!--header start here -->
+    <header class="header navbar fixed-top navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <img src="assets/img/logo.png" alt="Evento" height="60px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-text-align-right"></span>
+            </button>
+            <nav class="collapse navbar-collapse flex-sm-row-reverse" id="headernav" style="color: chartreuse;">
+                <ul class=" nav navbar-nav menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--header end here-->
+
+    <!--page title section-->
+    <section class="inner_cover parallax-window" data-parallax="scroll" data-image-src="assets/img/bg/bg-img.png">
+        <div class="overlay_dark"></div>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                    <div class="inner_cover_content">
+                        <h3>
+                            Events
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#">Home</a> | </li>
+                    <li><span>Events</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--page title section end-->
+
+
+    <!--events section -->
+    <section id="team" class="pb-5">
+        <div class="container">
+            <h5 class="section-title h1">Convenor</h5>
+            <div class="row">
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/img/team/ishaan.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>John Doe</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>We love that guy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+            </div>
+        </div>
+    </section>
+    <!--event section end -->
+
+
+
+    <!--get tickets section -->
+    <section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/beach.jpeg');">
+        <div class="container">
+            <div class="section_title mb30">
+                <h3 class="title color-light">
+                    Register Now
+                </h3>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-9 text-md-left text-center color-light">
+                    Ready to register. register for your favourute events now.
+                </div>
+                <div class="col-md-3 text-md-right text-center">
+                    <a href="#" class="btn btn-primary btn-rounded mt30">Register</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--get tickets section end-->
+
+    <!--footer start -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-4 col-12">
+                    <div class="footer_box">
+                        <div class="footer_header">
+                            <div class="footer_logo">
+                                <img src="assets/img/logo.png" alt="evento">
+                            </div>
+                        </div>
+                        <div class="footer_box_body">
+                            <ul class="footer_social">
+                                <li>
+                                    <a href="#"><i class="ion-social-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ion-social-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="footer_box">
+                        <div class="footer_header">
+                            <h4 class="footer_title">
+                                instagram
+                            </h4>
+                        </div>
+                        <div class="footer_box_body">
+                            <ul class="instagram_list">
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c1.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c2.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c3.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c3.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c2.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c1.png" alt="instagram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="footer_box">
+                        <div class="footer_header">
+                            <h4 class="footer_title">
+                                Contact Us
+                            </h4>
+                        </div>
+                        <div class="footer_box_body">
+                            <div class="newsletter_form">
+                                <button class="btn btn-rounded btn-block btn-primary"><a href="contact.html">Contact Us</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end -->
+
+    <!-- jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <!--slick carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--parallax -->
+    <script src="assets/js/parallax.min.js"></script>
+    <!--Counter up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--Counter down -->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

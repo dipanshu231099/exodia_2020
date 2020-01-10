@@ -1,499 +1,577 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>EXODIA-2020</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Exodia 2020 iit mandi orgainsed fest">
+    <meta name="keywords"
+        content="exodia , 2020 , fun, events, iit, mandi, himachal, fest, cultural, technical, design">
+    <meta name="author" content="exodia">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title> EXODIA 2020</title>
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper.min.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <header class="site-header" style="position: fixed; z-index: 100;">
-        <div class="header-bar" style="background:linear-gradient(grey,black);padding: 10px;">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-10 col-lg-4">
-                        <h1 class="site-branding flex">
-                            <a href="#">EXODIA-2020</a>
-                        </h1>
-                    </div>
+    <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+    </div>
 
-                    <div class="col-2 col-lg-8">
-                        <nav class="site-navigation">
-                            <div class="hamburger-menu d-lg-none">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div><!-- .hamburger-menu -->
-
-                            <ul>
-                                <li><a href="index.html">HOME</a></li>
-                                <li><a href="register.html">REGISTER</a></li>
-                                <li><a href="events.html">EVENTS</a></li>
-                                <li><a href="team.html">TEAM</a></li>
-                                <li><a href="contact.html">CONTACT</a></li>
-                                <li><a href="#"><i class="fas fa-search"></i></a></li>
-                            </ul><!-- flex -->
-                        </nav><!-- .site-navigation -->
-                    </div><!-- .col-12 -->
-                </div><!-- .row -->
-            </div><!-- container-fluid -->
-        </div><!-- header-bar -->
-    </header><!-- .site-header -->
-
-    <div class="hero-content">
+    <!--header start here -->
+    <header class="header navbar fixed-top navbar-expand-md">
         <div class="container">
-            <div class="row">
-                <div class="col-12 offset-lg-2 col-lg-10">
-                    <div class="entry-header zoom">
-                        <h2 style="position: relative; z-index: 0;">Exodia 2020</h2>
+            <a class="navbar-brand logo" href="#">
+                <img src="assets/img/logo.png" alt="Evento" height="60px"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-text-align-right"></span>
+            </button>
+            <nav class="collapse navbar-collapse flex-sm-row-reverse" id="headernav" style="color: chartreuse;">
+                <ul class=" nav navbar-nav menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--header end here-->
 
-                    </div><!-- .entry-header -->
+    <!--cover section slider -->
+    <section id="home" class="home-cover" style="height:1veh;">
+        <img src="assets/img/bg/sunset.png" alt="" width="100%">
+        <img src="assets/img/logo.png" style="position: absolute;left: 15%;right: 0;top:50%;margin: auto;">
+    </section>
+    <!--cover section slider end -->
 
-                    <div class="countdown flex flex-wrap justify-content-between" data-date="2020/06/28">
-                        <div class="countdown-holder">
-                            <div id="dday"></div>
-                        </div><!-- .countdown-holder -->
-
-                        <div class="countdown-holder">
-                            <div id="dhour"></div>
-                            <!-- <label>Hours</label> -->
-                        </div><!-- .countdown-holder -->
-
-                        <div class="countdown-holder">
-                            <div id="dmin"></div>
-                            <!-- <label>Minutes</label> -->
-                        </div><!-- .countdown-holder -->
-
-                        <div class="countdown-holder">
-                            <div id="dsec"></div>
-                            <!-- <label>Seconds</label> -->
-                        </div><!-- .countdown-holder -->
-                    </div><!-- .countdown -->
-                </div><!-- .col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-                <div class="col-12 ">
-                    <div class="entry-footer">
-                        <a href="register.html" class="btn">Register</a>
-                        <a href="contact.html" class="btn current">Contact us</a>
+    <!--event info -->
+    <!-- <section class="pt100 pb100" style="background-color: #101040;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-calendar-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title" style="color: aliceblue;">
+                            DATE
+                        </h5>
+                        <p>
+                            Tentaive
+                        </p>
                     </div>
                 </div>
             </div>
-        </div><!-- .container -->
-    </div><!-- .hero-content -->
-    <div class="content-section">
-        <img src="images/beach_sand.png" class='bgbg' style="top: 2000px;left: 0;transform: rotateY(180deg);" width="1905px">
-        <img src="images/sky.png" class='bgbg' style="z-index: -1;">
-        <img src="images/tree.png" class='bgbg' style="right: 0;top: 2000px; ">
-        <img src="images/vine.png" class="bgbg" style="transform: rotateY(180deg);right: 0;top: 2600px;">
-        <img src="images/vine.png" class="bgbg" style="transform: rotateY(180deg);right: 0;top: 3200px;">
-        <img src="images/vine.png" class="bgbg" style="transform: rotateY(180deg);right: 0;top: 3800px;">
-        <img src="images/tree3.png" class='bgbg' style="top: 1000px;z-index: -1;">
-        <img src="images/tree4.png" class='bgbg' style="right: 0;">
-        <img src="images/pineapple.gif" class="bgbg" style="top: 3000px;">
-        <div class="container">
-            <div class="row" style="margin-bottom:100px;">
-                <div class="col-12">
-                    <div class="lineup-artists-headline">
-                        <div class="entry-title">
-                            <h2 style="font-size:75px;">EVENTS</h2>
-                        </div><!-- entry-title -->
 
-                        <div class="left-view-event zoom">
-                            <img src="images/drone.gif" alt="">
-                            <span>Technical</span>
-                            <img src="images/box.jpg" class="zoom2" style="margin: auto;margin-left: 50px;">
-                        </div>
-
-                        <div class="left-view-event zoom3" style="text-align: right;z-index: 9;">
-                            <img src="images/box.jpg" class="zoom2" style="margin-right: 50px;">
-                            <span style="color: indianred;">Cultural</span>
-                            <img src="images/cult.png" width="600px" style="padding-left: 50px;">
-                        </div>
-
-                        <div class="left-view-event zoom" style="z-index: 8;padding: 0;">
-                            <img src="images/study.png" height=400px>
-                            <span style="color: gold;">Talent Hunt</span>
-                            <img src="images/box.jpg" class="zoom2" style="margin: auto;margin-left: 50px;">
-                        </div>
-
-                    </div><!-- lineup-artists-headline -->
-                </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="the-complete-lineup">
-                        <div class="entry-title">
-                            <h2 style="font-size: 80px;">Sponsors</h2>
-                        </div><!-- entry-title -->
-                        <!-- <div class="slideshow-container" style="width: 25%;">
-
-                            <div class="mySlides fade">
-                                <img src="images/sponsors/AIMCO SOLUTIONS.png" style="width:100%">
-                            </div>
-
-                            <div class="mySlides fade">
-                                <img src="images/sponsors/ashoka furniture.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides fade">
-                                <img src="images/sponsors/Asset 3@600x.png" style="width:100%">
-                            </div>
-
-                        </div> -->
-                        <div class="sponsors_ki_list">
-                            <img class="mySlides" src="images/sponsors/aasiyana decor.jpg" alt="">
-                            <img class="mySlides" src="images/sponsors/AIMCO SOLUTIONS.png" alt="">
-                            <img class="mySlides" src="images/sponsors/ashoka furniture.jpg" alt="">
-                            <img class="mySlides" src="images/sponsors/Asset 3@600x.png" alt="">
-                            <img class="mySlides" src="images/sponsors/beardo-3.jpg" alt="">
-                            <img class="mySlides" src="images/sponsors/BIO-RAD.png" alt="">
-                            <img class="mySlides" src="images/sponsors/catalyst.png" alt="">
-                            <img class="mySlides1" src="images/sponsors/ClearTrail.jpg" alt="">
-                            <img class="mySlides1" src="images/sponsors/cortex solutions.jpg" alt="">
-                            <img class="mySlides1" src="images/sponsors/Daily Dose Cafe.png" alt="">
-                            <img class="mySlides1" src="images/sponsors/ENTUPLE.png" alt="">
-                            <img class="mySlides1" src="images/sponsors/feeniks.png" alt="">
-                            <img class="mySlides1" src="images/sponsors/HBR Ascend.png" alt="">
-                            <img class="mySlides1" src="images/sponsors/internshalalogo.png" alt="">
-                            <img class="mySlides2" src="images/sponsors/made easy.jpg" alt="">
-                            <img class="mySlides2" src="images/sponsors/NBCC.jpeg" alt="">
-                            <img class="mySlides2" src="images/sponsors/obtuze solution.jpg" alt="">
-                            <img class="mySlides2" src="images/sponsors/orane international.png" alt="">
-                            <img class="mySlides2" src="images/sponsors/paras udyog.jpg" alt="">
-                            <img class="mySlides2" src="images/sponsors/PNB.png" alt="">
-                            <img class="mySlides2" src="images/sponsors/R Sons.png" alt="">
-                            <img class="mySlides3" src="images/sponsors/research aid.jpg" alt="">
-                            <img class="mySlides3" src="images/sponsors/SBI.png" alt="">
-                            <img class="mySlides3" src="images/sponsors/sjvn.png" alt="">
-                            <img class="mySlides3" src="images/sponsors/stage.jpg" alt="">
-                            <img class="mySlides3" src="images/sponsors/swag satrangi.jpeg" alt="">
-                            <img class="mySlides3" src="images/sponsors/The Plenum School.png" alt="">
-                        </div>
-
-                    </div><!-- the-complete-lineup -->
-                </div><!-- col-12 -->
-            </div><!-- row -->
-        </div><!-- container -->
-
-        <div class="homepage-next-events" style="margin-top: 300px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="entry-title">
-                            <h2 style="font-size: 75px;">GALLERY</h2>
-                        </div><!-- entry-title -->
-                    </div><!-- col-12 -->
-                </div><!-- row -->
-            </div><!-- container -->
-
-            <div class="next-event-slider-wrap">
-                <div class="swiper-container next-event-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-1.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-2.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-3.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-1.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-2.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-3.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-                    </div><!-- .swiper-wrapper -->
-                </div><!-- .swiper-container -->
-
-                <div class="swiper-button-next">
-                    <img src="images/button.png" alt="">
-                </div><!-- .slider-button -->
-            </div><!-- .next-event-slider-wrap -->
-        </div><!-- homepage-next-events -->
-
-        <div class="home-page-last-news">
-            <div class="container">
-                <div class="header">
-                    <div class="entry-title">
-                        <h2 style="font-size: 75px;">Get in touch</h2>
-                    </div><!-- entry-title -->
-                </div><!-- header -->
-                <div class="row" style="padding-top: 50px;">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="contact-medium flex align-items-center">
-                            <figure class="contact-icon">
-                                <img src="images/phone.jpg" alt="phone icon">
-                            </figure><!-- phone-icon -->
-                            <div class="contact-content" style="padding-left: 25px;">
-                                <div class="entry-title" style="color: black;">
-                                    <b>phone</b>
-                                </div><!-- entry-title -->
-                                <div class="entry-content" style="color: #989898;">
-                                    +91 99925 40895
-                                </div><!-- entry-content -->
-                            </div><!-- phone-number -->
-                        </div><!-- contact-phone -->
-                    </div><!-- col-4 -->
-
-                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
-                        <div class="contact-medium flex align-items-center">
-                            <figure class="contact-icon">
-                                <img src="images/mail.jpg" alt="phone icon">
-                            </figure><!-- phone-icon -->
-
-                            <div class="contact-content" style="padding-left: 25px;">
-                                <div class="entry-title" style="color: black;">
-                                    <b>Email</b>
-                                </div><!-- entry-title -->
-                                <div class="entry-content" style="color: #989898;">
-                                    publicity@exodia.in
-                                </div><!-- entry-content -->
-                            </div><!-- phone-number -->
-                        </div><!-- contact-phone -->
-                    </div><!-- col-4 -->
-
-                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0">
-                        <div class="contact-medium flex align-items-center">
-                            <figure class="contact-icon">
-                                <img src="images/place.jpg" alt="phone icon">
-                            </figure><!-- phone-icon -->
-
-                            <div class="contact-content" style="padding-left: 25px;">
-                                <div class="entry-title" style="color: black;">
-                                    <b>Address</b>
-                                </div><!-- entry-title -->
-                                <div class="entry-content" style="color: #989898;">
-                                    IIT MANDI
-                                </div><!-- entry-content -->
-                            </div><!-- phone-number -->
-                        </div><!-- contact-phone -->
-                    </div><!-- col-4 -->
-                    <a href="contact.html" style="text-align: center;margin: 50px auto"><button
-                            class="btn-sm btn btn-primary">Contact us</button></a>
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-location-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title" style="color: aliceblue;">
+                            location
+                        </h5>
+                        <p>
+                            IIT MANDI
+                        </p>
+                    </div>
                 </div>
-            </div><!-- container -->
-        </div><!-- home-page-last-news -->
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-person-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title" style="color: aliceblue;">
+                            speakers
+                        </h5>
+                        <p>
+                            Natalie James
+                            + guests
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-pricetag-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title style=" style="color: aliceblue;">
+                            tikets
+                        </h5>
+                        <p>
+                            $65 early bird
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section> -->
+    <!--event info end -->
 
-    <footer class="site-footer">
-        <div class="footer-cover-title flex justify-content-center align-items-center" style="margin-top: ;">
-            <h2>EXODIA</h2>
-        </div><!-- .site-footer -->
 
-        <div class="footer-content-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="entry-title">
-                            <a href="#">EXODIA</a>
-                        </div><!-- entry-title -->
+    <!--event countdown -->
+    <section class="bg-img pt70 pb70"
+        style="background:linear-gradient(to bottom, rgb(26, 26, 71),rgb(139, 222, 252)); height: 1200px;">
+        <img src="assets/img/bg/beach_PNG8.png" alt="" style="position: absolute;bottom: 0px;z-index: 1;" width="100%">
+        <!-- <img src="assets/img/bg/sea_gull2.gif" alt="" style="position: absolute;bottom: 400px;margin-left: 30%;"> -->
+        <img src="assets/img/bg/cloud2.png" alt="" style="position: relative; top: -100px;" width="200px">
+        <img src="assets/img/bg/cloud2.png" id="moving1" style="position: absolute; top: 300px;" width="200px">
+        <img src="assets/img/bg/cloud2.png" id="moving2" style="position: absolute; top: 200px;" width="300px">
+        <img src="assets/img/bg/cloud2.png" alt="" style="position: relative; top: -50px;left: -100px;" width="300px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <!-- Display the countdown timer in an element -->
+                    <span id="days"></span>
+                    <span id="hours"></span>
+                    <span id="minutes"></span>
+                    <span id="seconds"></span>
 
-                        <div class="entry-mail">
-                            <a href="#">publicity@exodia.in</a>
-                        </div><!-- .entry-mail -->
+                    <script>
+                        // Set the date we're counting down to
+                        var countDownDate = new Date("April 5, 2020 15:37:25").getTime();
 
-                        <div class="footer-social">
-                            <ul class="flex justify-content-center align-items-center">
-                                <!-- <li><a href="#"><i class="fab fa-pinterest"></i></a></li> -->
-                                <li><a href="https://www.facebook.com/Exodia.IITMandi/"><i
-                                            class="fab fa-facebook-f"></i></a></li>
-                                <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
-                                <li><a href="https://www.instagram.com/exodia.in/"><i class="fab fa-instagram"></i></a>
+                        // Update the count down every 1 second
+                        var x = setInterval(function () {
+
+                            // Get today's date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now and the count down date
+                            var distance = countDownDate - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            // Display the result in the element with id="demo"
+                            document.getElementById("days").innerHTML = days + "d ";
+                            document.getElementById("hours").innerHTML = hours + "h ";
+                            document.getElementById("minutes").innerHTML = minutes + "m ";
+                            document.getElementById("seconds").innerHTML = seconds + "s ";
+
+                            // If the count down is finished, write some text
+                            if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("demo").innerHTML = "EXPIRED";
+                            }
+                        }, 1000);
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--event count down end-->
+
+
+    <!--about the event -->
+    <section class="pt100 pb100" style="background: rgb(252, 244, 177);">
+        <div class="container">
+            <div class="section_title">
+                <h3 class="title">
+                    About the event
+                </h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing eli. Integer iaculis in lacus a sollicitudin.
+                        Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat.
+                        Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>
+                        In rhoncus massa nec sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque
+                        convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus
+                        lectus, at volutpat ligula euismod quis. Maecenas ornare, ex in malesuada tempus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about the event end -->
+
+
+    
+
+    <!--Price section-->
+    <section class="pb100" style="background: linear-gradient(#FCF4B1,white);">
+        <div class="container">
+            <div class="section_title mb50">
+                <h3 class="title">
+                    EVENTS
+                </h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-12">
+                    <div class="price_box">
+                        <div class="price_header">
+                            <h4>
+                                Technical
+                            </h4>
+                            <h6>
+                                Bring out the techie in you
+                            </h6>
+                        </div>
+                        <div class="price_tag">
+                            Tech
+                        </div>
+                        <div class="price_features">
+                            <ul>
+                                <li>
+                                    Drone
                                 </li>
-                                <!-- <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> -->
+                                <li>
+                                    Robowars
+                                </li>
+                                <li>
+                                    Line follower
+                                </li>
+                                <li>
+                                    And many more
+                                </li>
                             </ul>
-                        </div><!-- footer-social -->
-                    </div><!-- col -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </div><!-- footer-content-wrapper -->
-    </footer><!-- site-footer -->
-    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+                        </div>
+                        <div class="price_footer">
+                            <a href="#" class="btn btn-primary btn-rounded">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="price_box">
+                        <div class="price_header">
+                            <h4>
+                                Cultural
+                            </h4>
+                            <h6>
+                                Let's show 'em
+                            </h6>
+                        </div>
+                        <div class="price_tag">
+                            Cult
+                        </div>
+                        <div class="price_features">
+                            <ul>
+                                <li>
+                                    Band Slam
+                                </li>
+                                <li>
+                                    Canvas Painting
+                                </li>
+                                <li>
+                                    Couture
+                                </li>
+                                <li>
+                                    Rap Battle and many more
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price_footer">
+                            <a href="#" class="btn btn-primary btn-rounded">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="price_box">
+                        <div class="price_header">
+                            <h4>
+                                Informal
+                            </h4>
+                            <h6>
+                                Something more for fun
+                            </h6>
+                        </div>
+                        <div class="price_tag">
+                            Informal
+                        </div>
+                        <div class="price_features">
+                            <ul>
+                                <li>
+                                    Escape the room
+                                </li>
+                                <li>
+                                    Match'd
+                                </li>
+                                <li>
+                                    Online Gaming
+                                </li>
+                                <li>
+                                    And many more
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price_footer">
+                            <a href="#" class="btn btn-primary btn-rounded">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--price section end -->
 
+    <!--brands section -->
+    <section class="bg-gray pt100 pb100">
+        <div class="container">
+            <div class="section_title mb50">
+                <h3 class="title">
+                    Sponsors
+                </h3>
+            </div>
+            <div class="brand_carousel owl-carousel">
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/aasiyana decor.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/AIMCO SOLUTIONS.png" alt="brand">
+                </div>
 
-    <script type='text/javascript' src='js/jquery.js'></script>
-    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-    <script type='text/javascript' src='js/swiper.min.js'></script>
-    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
-    <script type='text/javascript' src='js/circle-progress.min.js'></script>
-    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
-    <script type='text/javascript' src='js/custom.js'></script>
-    <script>
-        var slideIndex = 0;
-        var slideIndex1 = 0;
-        var slideIndex2 = 0;
-        var slideIndex3 = 0;
-        showSlides();
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/ashoka furniture.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/Asset 3@600x.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/beardo-3.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/aasiyana decor.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/AIMCO SOLUTIONS.png" alt="brand">
+                </div>
 
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var slides1 = document.getElementsByClassName("mySlides1");
-            var slides2 = document.getElementsByClassName("mySlides2");
-            var slides3 = document.getElementsByClassName("mySlides3");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < slides1.length; i++) {
-                slides1[i].style.display = "none";
-            }
-            for (i = 0; i < slides2.length; i++) {
-                slides2[i].style.display = "none";
-            }
-            for (i = 0; i < slides3.length; i++) {
-                slides3[i].style.display = "none";
-            }
-            slideIndex++;
-            slideIndex1++;
-            slideIndex2++;
-            slideIndex3++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            if (slideIndex1 > slides1.length) {
-                slideIndex1 = 1
-            }
-            if (slideIndex2 > slides2.length) {
-                slideIndex2 = 1
-            }
-            if (slideIndex3 > slides3.length) {
-                slideIndex3 = 1
-            }
-            slides[slideIndex - 1].style.display = "inline-block";
-            slides1[slideIndex1 - 1].style.display = "inline-block";
-            slides2[slideIndex2 - 1].style.display = "inline-block";
-            slides3[slideIndex3 - 1].style.display = "inline-block";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/ashoka furniture.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/Asset 3@600x.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/beardo-3.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/BIO-RAD.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/catalyst.png" alt="brand">
+                </div>
 
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/ClearTrail.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/cortex solutions.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/Daily Dose Cafe.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/ENTUPLE.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/feeniks.png" alt="brand">
+                </div>
+
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/HBR Ascend.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/internshalalogo.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/made easy.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/NBCC.jpeg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/obtuze solution.jpg" alt="brand">
+                </div>
+
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/orane international.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/paras udyog.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/PNB.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/R Sons.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/research aid.jpg" alt="brand">
+                </div>
+
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/SBI.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/sjvn.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/stage.jpg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/swag satrangi.jpeg" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/The Plenum School.png" alt="brand">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--brands section end-->
+
+    
+
+    <!--footer start -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-4 col-12">
+                    <div class="footer_box">
+                        <div class="footer_header">
+                            <div class="footer_logo">
+                                <img src="assets/img/logo.png" alt="evento">
+                            </div>
+                        </div>
+                        <div class="footer_box_body">
+                            <ul class="footer_social">
+                                <li>
+                                    <a href="#"><i class="ion-social-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ion-social-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="footer_box">
+                        <div class="footer_header">
+                            <h4 class="footer_title">
+                                instagram
+                            </h4>
+                        </div>
+                        <div class="footer_box_body">
+                            <ul class="instagram_list">
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c1.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c2.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c3.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c3.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c2.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/cleander/c1.png" alt="instagram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="footer_box">
+                        <div class="footer_header">
+                            <h4 class="footer_title">
+                                Contact Us
+                            </h4>
+                        </div>
+                        <div class="footer_box_body">
+                            <div class="newsletter_form">
+                                <button class="btn btn-rounded btn-block btn-primary"><a href="contact.html">Contact Us</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end -->
+
+    <!-- jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <!--slick carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--parallax -->
+    <script src="assets/js/parallax.min.js"></script>
+    <!--Counter up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--Counter down -->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom js -->
+    <script src="assets/js/main.js"></script>
 </body>
-
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("April 5, 2020 15:37:25").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function () {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="demo"
-        document.getElementById("dday").innerHTML = days + "<br>days ";
-        document.getElementById("dhour").innerHTML = hours + "<br>hrs "
-        document.getElementById("dmin").innerHTML = minutes + "<br>min ";
-        document.getElementById("dsec").innerHTML = seconds + "<br>sec ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-</script>
 
 </html>
